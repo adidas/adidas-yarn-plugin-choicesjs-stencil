@@ -1,0 +1,15 @@
+{
+  "name": "@adidas/yarn-plugin-choicesjs-stencil",
+  "version": "1.0.0",
+  "description": "ChoicesJS Web Component plugin for adidas YARN Design System library",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adidas/adidas-yarn-plugin-choicesjs-stencil.git"
+  },
+  "license": "MIT",
+  "contributors": [
+    "David Recuenco <david.recuencogadea@gmail.com>",
+    "Jaime Pastor <moelders@gmail.com>"
+  ],
+  "homepage": "http://adidas.github.io/adidas-yarn-plugin-choicesjs-stencil/"
+}

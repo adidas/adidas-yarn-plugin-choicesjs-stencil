@@ -60,14 +60,21 @@
   "scripts": {
     "start": "npm run start:lib",
     "start:lib": "npm run build:dev",
-    "clean": "npm run clean:dist",
+    "start:example": "nuxt",
+    "clean": "npm run clean:dist && npm run clean:example",
     "clean:dist": "del dist",
+    "clean:example": "del docs && del .nuxt",
     "build": "npm run build:min",
     "build:umd": "webpack",
     "build:dev": "webpack -w",
     "build:min": "cross-env NODE_ENV=production LIBRARY_NAME=yarn-plugin-choicesjs-stencil webpack -p",
-    "lint": "npm run lint:less",
-    "lint:less": "stylelint src/less/**/*.less"
+    "build:example": "nuxt generate",
+    "build:example:spa": "cross-env NODE_ENV=production nuxt generate --spa",
+    "lint": "npm run lint:less && npm run lint:example",
+    "lint:less": "stylelint src/less/**/*.less",
+    "lint:example": "eslint --ext .js,.vue example",
+    "doc": "npm run build:example:spa",
+    "serve": "npm run build && nuxt build && nuxt start"
   },
   "keywords": [
     "choicesjs",

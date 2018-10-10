@@ -9,11 +9,20 @@ install:
 script:
 - npm run lint
 - npm run build
+- if [ "$TRAVIS_BRANCH" == "master" ]; then
+    HOSTNAME=//adidas.github.io/ BASE=/adidas-yarn-plugin-choicesjs-stencil/ npm run doc;
+  fi
 
 deploy:
 - provider: npm
   skip_cleanup: true
   email: uxteam@adidas-group.com
   api_key: $NPM_TOKEN
+  on:
+    branch: master
+- provider: pages
+  skip-cleanup: true
+  local-dir: ./docs
+  github-token: $GITHUB_TOKEN
   on:
     branch: master

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "title": "ChoicesJS plugin for adidas YARN",
+    "brand": "adidas",
+    "brand-link": "adidas.com",
+    "brand-link-url": "https://adidas.com/",
+    "imprint-url": "https://www.adidas-group.com/en/service/imprint/",
+    "yarn": "@:meta.title @:meta.subtitle",
+    "yarn-contact": "opensourcesoftware@adidas.com"
+  },
+  "repository": {
+    "name": "@adidas/yarn-plugin-choicesjs-stencil",
+    "url": "https://github.com/adidas/adidas-yarn-plugin-choicesjs-stencil"
+  },
+  "common": {
+    "contact": "contact",
+    "imprint": "imprint",
+    "plugin": "plugin",
+    "results": "Form values:",
+    "submit": "submit"
+  },
+  "views": {
+    "index": {
+      "name": "Examples of use",
+      "example": {
+        "name": "Live example",
+        "type": {
+          "text": "Faceted text selector",
+          "single": "Single value selector",
+          "multiple": "Multiple value selector"
+        },
+        "result": {
+          "form": "Form values",
+          "event": "Events"
+        },
+        "config": {
+          "placeholder": "select...",
+          "no-results": "No results found",
+          "no-choices": "Nothing to select",
+          "item-selection": "Press to choose",
+          "add-item": "Press enter to add <b>\"{value}\"</b>",
+          "max-items": "Maximum {maxItemCount} values",
+          "remove-button": "Remove item: {label}"
+        }
+      }
+    }
+  }
+}

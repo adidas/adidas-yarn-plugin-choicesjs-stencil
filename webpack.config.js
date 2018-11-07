@@ -3,7 +3,6 @@ const webpack = require('webpack');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const pkg = require('./package.json');
 
-const cwd = process.cwd();
 const production = process.env.NODE_ENV === 'production';
 const library = process.env.LIBRARY_NAME || 'yarn-plugin-choicesjs-stencil';
 const assets = 'assets';
@@ -35,7 +34,7 @@ module.exports = {
   },
   output: {
     filename: '[name].css',
-    path: path.resolve(cwd, './dist'),
+    path: path.resolve(__dirname, './dist'),
     library,
     libraryTarget: 'umd'
   },

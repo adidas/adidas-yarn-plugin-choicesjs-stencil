@@ -71,11 +71,13 @@
           margin: 0 0 @padding-small-vertical @padding-small-horizontal;
           display: inline-block;
           position: relative;
+          word-break: normal;
 
           &.is-highlighted {
             color: @list-item-highlighted-color;
             border-color: @list-item-highlighted-color;
 
+            .choices__button,
             .yarn-icon {
               color: @list-item-highlighted-color !important;
             }
@@ -113,13 +115,17 @@
 
         &.choices__list--single {
           padding: 0;
+          display: flex;
 
           .choices__item {
             border: none;
             color: @input-color;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             margin-top: @padding-xs-vertical;
             width: calc(100% ~'-' @list-dropdown-button-width);
             position: relative;
+            overflow: hidden;
 
             .choices__button {
               border-radius: @input-border-radius;
@@ -149,14 +155,16 @@
     }
 
     .choices__list {
-      max-height: @list-max-height;
-
       &.choices__list--dropdown {
         border-radius: @input-border-radius;
         color: @primary-darkgray;
 
         &.is-active {
           border-top-color: @blue-100;
+        }
+
+        > .choices__list {
+          max-height: @list-max-height;
         }
 
         > .choices__item {
@@ -174,8 +182,11 @@
 
         .choices__item {
           font-size: inherit;
+          text-overflow: ellipsis;
+          white-space: nowrap;
           padding: @padding-xs-vertical @padding-base-horizontal;
           height: @list-item-height;
+          overflow: hidden;
 
           &.choices__item--selectable {
             &.is-highlighted {

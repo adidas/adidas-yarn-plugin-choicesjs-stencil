@@ -1,6 +1,15 @@
 [![npm version](https://badge.fury.io/js/%40adidas%2Fyarn-plugin-choicesjs-stencil.svg)](https://www.npmjs.com/package/@adidas/yarn-plugin-choicesjs-stencil)
 
-![[](https://travis-ci.com/adidas/adidas-yarn-plugin-choicesjs-stencil)]![[](https://api.travis-ci.com/adidas/adidas-yarn-plugin-choicesjs-stencil.svg?branch=master)
+![[](https://travis-ci.com/adidas/adidas-yarn-plugin-choicesjs-stencil)](https://api.travis-ci.com/adidas/adidas-yarn-plugin-choicesjs-stencil.svg?branch=master)
+
+**MOVED REPOSITORY**
+
+**This plugin has been moved, as well as its documentation, to a new mono repository which contains all YARN plugins all together.**
+
+**The NPM package remains unchanged: [@adidas/yarn-plugin-choicesjs-stencil][npm-yarn-plugin-choicesjs-stencil].**
+
+- New repository: **[adidas/adidas-yarn-design-system-plugins][yarn-plugins-repository]**.
+- Documentation: **[adidas-yarn-design-system-plugins/plugins/choicesjs-stencil][yarn-plugins-documentation]**.
 
 # ChoicesJS Web Component plugin for adidas YARN Design System library
 
@@ -189,6 +198,7 @@ For further information open the [adidas terms and conditions][terms-and-conditi
 [choicesjs-stencil]: https://github.com/adidas/choicesjs-stencil
 [eslint]: https://eslint.org/
 [node]: https://nodejs.org/
+[npm-yarn-plugin-choicesjs-stencil]: https://www.npmjs.com/package/@adidas/yarn-plugin-choicesjs-stencil
 [nuxt]: https://nuxtjs.org/s.google.com/specimen/Roboto+Mono
 [single-page-application]: https://en.wikipedia.org/wiki/Single-page_application
 [stylelint]: https://stylelint.io/
@@ -196,3 +206,5 @@ For further information open the [adidas terms and conditions][terms-and-conditi
 [vuejs]: https://vuejs.org/
 [webpack]: https://webpack.js.org/
 [webpack-hot-module-replacement]: https://webpack.js.org/concepts/hot-module-replacement/
+[yarn-plugins-repository]: https://github.com/adidas/adidas-yarn-design-system-plugins
+[yarn-plugins-documentation]: https://adidas.github.io/adidas-yarn-design-system-plugins/plugins/choicesjs-stencil
